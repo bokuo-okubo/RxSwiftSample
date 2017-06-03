@@ -97,12 +97,12 @@
 		784DB0F01EE3048300D7457F = {
 			isa = PBXGroup;
 			children = (
+				784DB12A1EE3065100D7457F /* Frameworks */,
+				784DB0FA1EE3048300D7457F /* Products */,
 				7804B5B81EE320EC007E95A3 /* Resource */,
-				784DB1391EE30AA100D7457F /* Source */,
 				784DB1101EE3048300D7457F /* RxSwiftSampleTests */,
 				784DB11B1EE3048300D7457F /* RxSwiftSampleUITests */,
-				784DB0FA1EE3048300D7457F /* Products */,
-				784DB12A1EE3065100D7457F /* Frameworks */,
+				784DB1391EE30AA100D7457F /* Source */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,8 +119,8 @@
 		784DB1101EE3048300D7457F /* RxSwiftSampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				784DB1111EE3048300D7457F /* RxSwiftSampleTests.swift */,
 				784DB1131EE3048300D7457F /* Info.plist */,
+				784DB1111EE3048300D7457F /* RxSwiftSampleTests.swift */,
 			);
 			path = RxSwiftSampleTests;
 			sourceTree = "<group>";
@@ -128,8 +128,8 @@
 		784DB11B1EE3048300D7457F /* RxSwiftSampleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				784DB11C1EE3048300D7457F /* RxSwiftSampleUITests.swift */,
 				784DB11E1EE3048300D7457F /* Info.plist */,
+				784DB11C1EE3048300D7457F /* RxSwiftSampleUITests.swift */,
 			);
 			path = RxSwiftSampleUITests;
 			sourceTree = "<group>";
@@ -170,7 +170,7 @@
 				784DB13B1EE30AA100D7457F /* Info.plist */,
 				784DB13C1EE30AA100D7457F /* LaunchScreen.storyboard */,
 			);
-			name = iOS;
+			path = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -484,7 +484,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.bokuo-okubo.RxSwiftSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -501,7 +501,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.bokuo-okubo.RxSwiftSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
