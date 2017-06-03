@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7804B5BA1EE320EC007E95A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7804B5B91EE320EC007E95A3 /* Assets.xcassets */; };
 		784DB1121EE3048300D7457F /* RxSwiftSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784DB1111EE3048300D7457F /* RxSwiftSampleTests.swift */; };
 		784DB11D1EE3048300D7457F /* RxSwiftSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784DB11C1EE3048300D7457F /* RxSwiftSampleUITests.swift */; };
 		784DB1301EE3065100D7457F /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784DB12C1EE3065100D7457F /* RxCocoa.framework */; };
@@ -17,7 +18,6 @@
 		784DB1411EE30AA100D7457F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 784DB13C1EE30AA100D7457F /* LaunchScreen.storyboard */; };
 		784DB1421EE30AA100D7457F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 784DB13D1EE30AA100D7457F /* Main.storyboard */; };
 		784DB1431EE30AA100D7457F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784DB13E1EE30AA100D7457F /* ViewController.swift */; };
-		784DB1461EE30B4C00D7457F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 784DB1451EE30B4C00D7457F /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7804B5B91EE320EC007E95A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		784DB0F91EE3048300D7457F /* RxSwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		784DB10D1EE3048300D7457F /* RxSwiftSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwiftSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		784DB1111EE3048300D7457F /* RxSwiftSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftSampleTests.swift; sourceTree = "<group>"; };
@@ -54,7 +55,6 @@
 		784DB13C1EE30AA100D7457F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		784DB13D1EE30AA100D7457F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		784DB13E1EE30AA100D7457F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		784DB1451EE30B4C00D7457F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Source/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,10 +86,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7804B5B81EE320EC007E95A3 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				7804B5B91EE320EC007E95A3 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		784DB0F01EE3048300D7457F = {
 			isa = PBXGroup;
 			children = (
-				784DB1451EE30B4C00D7457F /* Assets.xcassets */,
+				7804B5B81EE320EC007E95A3 /* Resource */,
 				784DB1391EE30AA100D7457F /* Source */,
 				784DB1101EE3048300D7457F /* RxSwiftSampleTests */,
 				784DB11B1EE3048300D7457F /* RxSwiftSampleUITests */,
@@ -278,7 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				784DB1421EE30AA100D7457F /* Main.storyboard in Resources */,
-				784DB1461EE30B4C00D7457F /* Assets.xcassets in Resources */,
+				7804B5BA1EE320EC007E95A3 /* Assets.xcassets in Resources */,
 				784DB1411EE30AA100D7457F /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -586,6 +594,7 @@
 				784DB1231EE3048300D7457F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		784DB1241EE3048300D7457F /* Build configuration list for PBXNativeTarget "RxSwiftSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -594,6 +603,7 @@
 				784DB1261EE3048300D7457F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		784DB1271EE3048300D7457F /* Build configuration list for PBXNativeTarget "RxSwiftSampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -602,6 +612,7 @@
 				784DB1291EE3048300D7457F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
