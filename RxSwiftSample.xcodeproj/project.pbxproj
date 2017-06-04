@@ -40,7 +40,7 @@
 
 /* Begin PBXFileReference section */
 		7804B5B91EE320EC007E95A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		781CCD6E1EE3A38200566A7F /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = View.xib; path = Source/View.xib; sourceTree = "<group>"; };
+		781CCD6E1EE3A38200566A7F /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = View.xib; path = View.xib; sourceTree = "<group>"; };
 		784DB0F91EE3048300D7457F /* RxSwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		784DB10D1EE3048300D7457F /* RxSwiftSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwiftSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		784DB1111EE3048300D7457F /* RxSwiftSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftSampleTests.swift; sourceTree = "<group>"; };
@@ -52,11 +52,11 @@
 		784DB12C1EE3065100D7457F /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		784DB12D1EE3065100D7457F /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		784DB12E1EE3065100D7457F /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
-		784DB13A1EE30AA100D7457F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Source/AppDelegate.swift; sourceTree = "<group>"; };
+		784DB13A1EE30AA100D7457F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		784DB13B1EE30AA100D7457F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		784DB13C1EE30AA100D7457F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		784DB13D1EE30AA100D7457F /* Top.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Top.storyboard; path = Source/Top.storyboard; sourceTree = "<group>"; };
-		784DB13E1EE30AA100D7457F /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopViewController.swift; path = Source/TopViewController.swift; sourceTree = "<group>"; };
+		784DB13D1EE30AA100D7457F /* Top.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Top.storyboard; path = Top.storyboard; sourceTree = "<group>"; };
+		784DB13E1EE30AA100D7457F /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopViewController.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,32 +99,33 @@
 		781CCD6C1EE3A31A00566A7F /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				784DB13A1EE30AA100D7457F /* AppDelegate.swift */,
 				781CCD6D1EE3A33D00566A7F /* Top */,
+				784DB13A1EE30AA100D7457F /* AppDelegate.swift */,
 			);
 			name = Application;
-			path = ..;
+			path = Application;
 			sourceTree = "<group>";
 		};
 		781CCD6D1EE3A33D00566A7F /* Top */ = {
 			isa = PBXGroup;
 			children = (
+				784DB13D1EE30AA100D7457F /* Top.storyboard */,
 				784DB13E1EE30AA100D7457F /* TopViewController.swift */,
 				781CCD6E1EE3A38200566A7F /* View.xib */,
-				784DB13D1EE30AA100D7457F /* Top.storyboard */,
 			);
 			name = Top;
+			path = Top;
 			sourceTree = "<group>";
 		};
 		784DB0F01EE3048300D7457F = {
 			isa = PBXGroup;
 			children = (
-				784DB1391EE30AA100D7457F /* Source */,
 				784DB12A1EE3065100D7457F /* Frameworks */,
 				784DB0FA1EE3048300D7457F /* Products */,
 				7804B5B81EE320EC007E95A3 /* Resource */,
 				784DB1101EE3048300D7457F /* RxSwiftSampleTests */,
 				784DB11B1EE3048300D7457F /* RxSwiftSampleUITests */,
+				784DB1391EE30AA100D7457F /* Source */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,8 +171,8 @@
 		784DB1391EE30AA100D7457F /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				784DB1481EE30CC900D7457F /* iOS */,
 				781CCD6C1EE3A31A00566A7F /* Application */,
+				784DB1481EE30CC900D7457F /* iOS */,
 			);
 			path = Source;
 			sourceTree = "<group>";
