@@ -8,11 +8,39 @@
 
 import UIKit
 
-class TopViewController: UIViewController {
+protocol JmtyViewControllable {
+    func getStatusbarHeight() -> CGFloat
+    func getNavigationbarHeight() -> CGFloat
+}
+
+extension JmtyViewControllable  where Self: UIViewController {
+    
+    func getStatusbarHeight() -> CGFloat {
+        return UIApplication.shared.statusBarFrame.height
+    }
+
+    func getNavigationbarHeight() -> CGFloat {
+        if let height = self.navigationController?.navigationBar.frame.height {
+            return height
+        } else {
+            return 0
+        }
+    }
+}
+
+//------
+
+let topViewControllerNibName = "TopViewController"
+class TopViewController: UIViewController, JmtyViewControllable {
+
+    override func loadView() {
+        if let view = UINib(nibName: topViewControllerNibName, bundle: nil).instantiate(withOwner: self, options: nil).first as? UIView {
+            self.view = view
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {

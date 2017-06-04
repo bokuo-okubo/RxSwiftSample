@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopViewController" customModule="RxSwiftSample" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Bb2-dB-etD">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hoh-Y5-coa">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <searchBar key="tableHeaderView" contentMode="redraw" id="fLv-ZK-7fD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </searchBar>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eR-uV-y0P">
+                    <rect key="frame" x="21" y="215.5" width="334" height="125.5"/>
+                    <string key="text">This app transforms Wikipedia into image search engine.
+It uses Wikipedia search API to find content and scrapes the HTML of those pages for image URLs.
+This is only showcase app, not intended for production purposes.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="0eR-uV-y0P" secondAttribute="centerY" multiplier="1.2" id="7S9-1E-7R0"/>
+                <constraint firstItem="hoh-Y5-coa" firstAttribute="top" secondItem="Bb2-dB-etD" secondAttribute="top" id="CEC-Vf-u9z"/>
+                <constraint firstAttribute="bottom" secondItem="hoh-Y5-coa" secondAttribute="bottom" id="OEl-va-Jqu"/>
+                <constraint firstItem="hoh-Y5-coa" firstAttribute="leading" secondItem="Bb2-dB-etD" secondAttribute="leading" id="QF7-q9-N8T"/>
+                <constraint firstAttribute="trailingMargin" secondItem="0eR-uV-y0P" secondAttribute="trailing" constant="12" id="Xyi-N2-LtL"/>
+                <constraint firstAttribute="centerX" secondItem="0eR-uV-y0P" secondAttribute="centerX" constant="-0.5" id="YTX-dO-JPH"/>
+                <constraint firstAttribute="trailing" secondItem="hoh-Y5-coa" secondAttribute="trailing" id="k4c-bd-Cym"/>
+                <constraint firstItem="0eR-uV-y0P" firstAttribute="leading" secondItem="Bb2-dB-etD" secondAttribute="leadingMargin" constant="13" id="oIo-33-N8I"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

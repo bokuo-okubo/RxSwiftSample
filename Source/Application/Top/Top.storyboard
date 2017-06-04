@@ -8,10 +8,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
     </dependencies>
     <scenes>
-        <!--Top View Controller-->
+        <!--TopViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="TopViewController" sceneMemberID="viewController"/>
+                <viewController title="TopViewController" id="BYZ-38-t0r" customClass="TopViewController" customModule="RxSwiftSample" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
